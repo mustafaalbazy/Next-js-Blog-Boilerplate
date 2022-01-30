@@ -8,6 +8,46 @@ a:hover {
   @apply underline;
 }
 
+.blog-title {
+  font-family: Chalkboard, Comic Sans MS;
+}
+
+.blog-description {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.mr-6 {
+  font-size: 1rem !important;
+  margin-right: 1.5rem !important;
+  font-family: Comic Sans MS, sans-serif;
+}
+
+.blogs-list {
+  font-family: Comic Sans MS;
+}
+
+.blogs-list-slug {
+  border-bottom: dashed thin dimgrey;
+}
+
+.py-5 {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.single-title {
+  font-family: Comic Sans MS;
+}
+
+
+.blog-content {
+  font-family: Helvetica, sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+
 @tailwind components;
 
 @tailwind utilities;
