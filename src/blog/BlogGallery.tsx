@@ -13,13 +13,14 @@ export type IBlogGalleryProps = {
 
 const BlogGallery = (props: IBlogGalleryProps) => (
   <>
+    <div className="text-base mb-2">Latest Blogs</div>
     <ul>
       {props.posts.map((elt) => (
-        <li key={elt.slug} className="mb-3 flex justify-between blogs-list">
+        <li key={elt.slug} className="justify-between blogs-list">
           <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
             <div className="blogs-list-slug">
               <a>
-                <h2>{elt.title}</h2>
+                <h2 className="text-2xl mt-12">{elt.title}</h2>
               </a>
             </div>
           </Link>
@@ -27,6 +28,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
           <div className="text-right">
             {format(new Date(elt.date), 'd LLL, yyyy')}
           </div>
+          <div className="mb-6 blogs-list">{elt.description}</div>
         </li>
       ))}
     </ul>

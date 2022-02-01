@@ -13,21 +13,17 @@ const Content = (props: IContentProps) => (
         .content :global(*) {
           @apply break-words;
         }
-
         .content :global(p) {
           @apply my-6;
         }
-
         .content :global(ul) {
           @apply my-6;
         }
-
         .content :global(h2) {
-          @apply text-2xl font-semibold text-gray-700 my-4;
+          @apply text-2xl font-semibold mt-12;
         }
-
         .content :global(h3) {
-          @apply text-xl font-semibold text-gray-700 my-4;
+          @apply text-xl font-semibold mt-8;
         }
       `}
     </style>

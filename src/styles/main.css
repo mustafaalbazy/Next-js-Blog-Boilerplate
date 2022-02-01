@@ -5,22 +5,49 @@ a {
 }
 
 a:hover {
-  @apply underline;
+  text-decoration: none;
+  color: crimson;
 }
 
 .blog-title {
   font-family: Chalkboard, Comic Sans MS;
 }
 
+.blog-title:hover {
+  text-decoration: none;
+  color: crimson;
+}
+
 .blog-description {
   font-family: monospace;
-  font-size: 1rem;
+  font-size: 1rem !important;
+  color: crimson;
+  margin-left: 75px;
+  margin-top: -10px;
+}
+
+.profile-image {
+  border-radius: 35px;
+  display: inline;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-bottom: -10px;
 }
 
 .mr-6 {
   font-size: 1rem !important;
   margin-right: 1.5rem !important;
   font-family: Comic Sans MS, sans-serif;
+}
+
+.single-title {
+  font-family: Comic Sans MS;
+}
+
+.blog-content {
+  font-family: Helvetica, sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .blogs-list {
@@ -35,18 +62,6 @@ a:hover {
   margin-top: 4rem;
   margin-bottom: 3rem;
 }
-
-.single-title {
-  font-family: Comic Sans MS;
-}
-
-
-.blog-content {
-  font-family: Helvetica, sans-serif;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-}
-
 
 @tailwind components;
 

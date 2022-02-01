@@ -11,16 +11,28 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => (
-  <div className="antialiased w-full text-gray-700 px-3 md:px-0">
+  <div className="antialiased w-full text-gray-700 dark:text-stone-400 px-3 md:px-0">
     {props.meta}
-
     <div className="max-w-screen-md mx-auto">
       <div className="border-b border-gray-300">
         <div className="pt-16 pb-8">
-          <div className="font-semibold text-3xl blog-title text-gray-900">
-            {AppConfig.title}
+          <div>
+            <a
+              className="blog-title dark:text-stone-400 font-semibold text-3xl text-gray-900"
+              title="Mustafa Albazy"
+              href="https://mustafa.page/"
+              rel="home"
+            >
+              <img
+                width="60"
+                src="https://albazy.com/wp-content/uploads/2022/01/mustafa_90_90.jpg"
+                className="profile-image"
+                alt="Mustafa Albazy"
+              ></img>
+              {AppConfig.title}
+            </a>
           </div>
-          <div className="text-xl blog-description">
+          <div className="text-xl blog-description dark:text-stone-500">
             {AppConfig.description}
           </div>
         </div>

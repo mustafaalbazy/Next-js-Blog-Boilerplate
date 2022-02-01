@@ -1,5 +1,6 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}', './_posts/**/*.md'],
+  darkMode: 'class',
   theme: {
     fontSize: {
       xs: '0.75rem',
