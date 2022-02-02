@@ -36,6 +36,11 @@ const DisplayPost = (props: IPostProps) => (
       />
     }
   >
+    <img
+      className="width:400px; mb-12"
+      src={props.image}
+      alt={props.title}
+    ></img>
     <h1 className="single-title text-center font-bold text-3xl text-gray-900 dark:text-stone-400">
       {props.title}
     </h1>

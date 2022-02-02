@@ -3,7 +3,7 @@ title: 'Hello World'
 description: "Hi everyone, This is my first post in the newly created personal site. I'm still in the early stages of the site development. So expect some changes in the coming weeks. However, I'll keep the design minimal as much as I can, as I hate busy-looking sites specially when it is about reading text such as blogs and articles."
 date: '2022-01-29'
 modified_date: '2022-01-29'
-image: /assets/images/posts/random-img.jpg
+image: '/assets/images/posts/hello-world.jpg'
 ---
 
 Hi everyone, 
