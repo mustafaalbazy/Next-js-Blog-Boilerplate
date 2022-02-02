@@ -17,20 +17,17 @@ const Main = (props: IMainProps) => (
       <div className="border-b border-gray-300">
         <div className="pt-16 pb-8">
           <div>
-            <a
-              className="blog-title dark:text-stone-400 font-semibold text-3xl text-gray-900"
-              title="Mustafa Albazy"
-              href="https://mustafa.page/"
-              rel="home"
-            >
-              <img
-                width="60"
-                src="https://albazy.com/wp-content/uploads/2022/01/mustafa_90_90.jpg"
-                className="profile-image"
-                alt="Mustafa Albazy"
-              ></img>
-              {AppConfig.title}
-            </a>
+            <Link href="/">
+              <a className="blog-title dark:text-stone-400 font-semibold text-3xl text-gray-900">
+                <img
+                  width="60"
+                  src="https://albazy.com/wp-content/uploads/2022/01/mustafa_90_90.jpg"
+                  className="profile-image"
+                  alt="Mustafa Albazy"
+                ></img>
+                {AppConfig.title}
+              </a>
+            </Link>
           </div>
           <div className="text-xl blog-description dark:text-stone-500">
             {AppConfig.description}
