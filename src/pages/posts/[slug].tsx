@@ -2,6 +2,12 @@ import React from 'react';
 
 import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+} from 'next-share';
 
 import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
@@ -54,6 +60,17 @@ const DisplayPost = (props: IPostProps) => (
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: props.content }}
       />
+
+      <FacebookShareButton
+        url={''}
+        quote={props.title}
+        hashtag={'#MustafaAlbazy'}
+      >
+        <FacebookIcon size={32} round />
+      </FacebookShareButton>
+      <TwitterShareButton url={''} title={props.title}>
+        <TwitterIcon size={32} round />
+      </TwitterShareButton>
     </Content>
   </Main>
 );
